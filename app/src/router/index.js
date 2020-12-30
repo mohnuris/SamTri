@@ -4,6 +4,7 @@ import {
 } from 'vue-router'
 import Home from '../views/Home.vue'
 import Users from '../views/Users.vue'
+import Layout from '../components/Layout.vue'
 
 
 const routes = [{
@@ -14,7 +15,13 @@ const routes = [{
   {
     path: '/Users',
     name: 'Users',
-    comments: Users
+    component: Users
+
+  },
+  {
+    path: '/Layout',
+    name: 'Layout',
+    component: Layout
 
   },
   {
